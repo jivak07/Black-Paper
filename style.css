@@ -7,7 +7,7 @@
 body {
   background-color: hsl(0, 0%, 0%);
   color: #e6ad03;
-  font-family: 'Courier New', monospace;
+  font-family: 'Inter', monospace;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   letter-spacing: 2px;
   margin-bottom: 4px;
 }
@@ -66,4 +66,32 @@ button {
 
 button:hover {
   background: #ccc;
+}
+
+.task {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+
+.task-name {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.task-estimate {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.task-gap {
+  font-weight: bold;
+  color: #e0a458;
+  margin-top: 4px;
+}
+
+.task button {
+  margin-top: 8px;
 }
