@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -38,7 +38,7 @@ form {
   margin-bottom: 32px;
 }
 
-input {
+input, select {
   background: hwb(212 48% 22%);
   border: 1px solid hsl(32, 100%, 44%);
   color: #0d4aba;
@@ -48,14 +48,27 @@ input {
   border-radius: 4px;
 }
 
-input:focus {
+input:focus, select:focus {
   outline: none;
   border-color: hwb(41 24% 7%);
 }
 
+.estimate-row {
+  display: flex;
+  gap: 8px;
+}
+
+.estimate-row input {
+  flex: 2;
+}
+
+.estimate-row select {
+  flex: 1;
+}
+
 button {
   background: #ecd7e9;
-  color: #000000;
+  color: #013909;
   border: none;
   padding: 12px;
   font-family: inherit;
@@ -92,6 +105,22 @@ button:hover {
   margin-top: 4px;
 }
 
+.category-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.category-stat {
+  background: hwb(212 48% 22%);
+  border: 1px solid hsl(32, 100%, 44%);
+  color: #0d4aba;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+}
+
 .task button {
   margin-top: 8px;
 }
@@ -110,6 +139,19 @@ button:hover {
   color: #52091a;
   font-weight: bold;
   font-size: 1.1rem;
+}
+
+.stats-headline {
+  color: #52091a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.stats-example {
+  color: hsl(295, 20%, 45%);
+  font-size: 0.85rem;
+  margin-bottom: 8px;
 }
 
 #prediction {
@@ -136,6 +178,6 @@ button:hover {
 }
 
 .delete-btn:hover {
-  color: #e0a458;
-  border-color: #e0a458;
+  color: #e30a0a;
+  border-color: #bb2442;
 }
