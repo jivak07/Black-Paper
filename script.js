@@ -76,7 +76,7 @@ function renderStats() {
   let html = '<p class="stats-headline">' + headline + '</p>';
   html += '<p class="stats-example">Example: you estimate ' + formatTime(sampleEstimate) + ', it usually becomes ' + formatTime(sampleActual) + '.</p>';
 
-  const categories = ['Study', 'Coding', 'Chores', 'Other'];
+  const categories = ['Study', 'Coding', 'Chores', 'Chores', 'Other', 'Select task category'];
   let categoryHtml = '';
 
   categories.forEach(function (cat) {
