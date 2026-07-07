@@ -15,7 +15,20 @@
 
     <form id="task-form">
       <input type="text" id="task-name" placeholder="What are you about to do?" required>
-      <input type="number" id="task-estimate" placeholder="Estimated minutes" required>
+      <select id="task-category">
+        <option value="Study">Study</option>
+        <option value="Coding">Coding</option>
+        <option value="Chores">Chores</option>
+        <option value="Other" selected>Other</option>
+      </select>
+      <div class="estimate-row">
+        <input type="number" id="task-estimate" placeholder="Estimated time" min="1" required>
+        <select id="task-unit">
+          <option value="minutes">minutes</option>
+          <option value="hours">hours</option>
+          <option value="days">days</option>
+        </select>
+      </div>
       <p id="prediction"></p>
       <button type="submit">Start Task</button>
     </form>
