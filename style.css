@@ -5,9 +5,9 @@
 }
 
 body {
-  background-color: lab(81.7% 8.38 -1.45);
-  color: hsl(295, 39%, 19%);
-  font-family: 'MS Sans Serif';
+  background-color: lab(63.43% 16.91 -55.13);
+  color: hsl(0, 0%, 0%);
+  font-family: "MS Sans Serif", sans-serif;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -19,8 +19,38 @@ body {
   width: 100%;
 }
 
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.data-controls {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.small-btn {
+  background: #94e8e8;
+  color: #52200a;
+  border: none;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 0.75rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.small-btn:hover {
+  background: hwb(113 16% 18%);
+}
+
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   letter-spacing: 2px;
   margin-bottom: 4px;
 }
@@ -39,18 +69,18 @@ form {
 }
 
 input, select {
-  background: hwb(212 48% 22%);
-  border: 1px solid hsl(32, 100%, 44%);
-  color: #0d4aba;
+  background: lab(80.06% 31.29 0.88);
+  border: 1px solid hsl(15, 100%, 50%);
+  color: hsl(0, 0%, 0%);
   padding: 12px;
-  font-family: inherit;
+  font-family: MS Sans Serif;
   font-size: 1rem;
   border-radius: 4px;
 }
 
 input:focus, select:focus {
   outline: none;
-  border-color: hwb(41 24% 7%);
+  border-color: hwb(130 2% 65%);
 }
 
 .estimate-row {
@@ -67,8 +97,8 @@ input:focus, select:focus {
 }
 
 button {
-  background: #ecd7e9;
-  color: #013909;
+  background: #94e8e8;
+  color: #52200a;
   border: none;
   padding: 12px;
   font-family: inherit;
@@ -78,15 +108,23 @@ button {
 }
 
 button:hover {
-  background: #ccc;
+  background: hwb(113 16% 18%);
 }
 
 .task {
-  background: #d9973b;
-  border: 1px solid #153202;
-  border-radius: 4px;
-  padding: 12px;
-  margin-bottom: 8px;
+   background: hsl(21, 73%, 53%);
+  border: 1px solid #ff5425;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 18px;
+}
+
+.task-urgent {
+  border: 2px solid #ffb300;
+}
+
+.task-overdue {
+  border: 2px solid #e30a0a;
 }
 
 .task-name {
@@ -95,7 +133,7 @@ button:hover {
 }
 
 .task-estimate {
-  color: #501c1c;
+  color: #ff0000;
   font-size: 0.9rem;
 }
 
@@ -103,6 +141,13 @@ button:hover {
   font-weight: bold;
   color: lch(30.57% 35.56 113.68);
   margin-top: 4px;
+}
+
+.task-distraction {
+  color: #52091a;
+  font-size: 0.8rem;
+  margin-top: 2px;
+  font-style: italic;
 }
 
 .category-breakdown {
@@ -130,15 +175,9 @@ button:hover {
 }
 
 .stats-empty {
-  color: #666;
+  color: #999797;
   font-size: 0.9rem;
   font-style: italic;
-}
-
-.stats-multiplier {
-  color: #52091a;
-  font-weight: bold;
-  font-size: 1.1rem;
 }
 
 .stats-headline {
@@ -149,8 +188,14 @@ button:hover {
 }
 
 .stats-example {
+  color: hsl(148, 99%, 65%);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.stats-dread {
   color: hsl(295, 20%, 45%);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   margin-bottom: 8px;
 }
 
@@ -173,11 +218,94 @@ button:hover {
 
 .delete-btn {
   background: transparent;
-  color: #666;
-  border: 1px solid #333;
+  color: #efecec;
+  border: 1px solid #9b18ff;
 }
 
 .delete-btn:hover {
   color: #e30a0a;
   border-color: #bb2442;
+}
+
+.field-label {
+  color: hsl(295, 47%, 56%);
+  font-size: 0.9rem;
+  margin-bottom: -6px;
+}
+
+#weekly-check {
+  margin-bottom: 20px;
+}
+
+.weekly-title {
+  color: #52091a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.weekly-line {
+  color: hsl(109, 100%, 50%);
+  font-size: 0.85rem;
+}
+
+.weekly-line-good {
+  color: hsl(200, 100%, 40%);
+  font-size: 0.85rem;
+}
+
+#trend {
+  margin-bottom: 20px;
+}
+
+.trend-title {
+  color: #52091a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.trend-line {
+  color: hsl(295, 20%, 45%);
+  font-size: 0.85rem;
+}
+
+#day-total {
+  margin-bottom: 16px;
+}
+
+.day-total-line {
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+
+.day-total-realistic {
+  color: #52091a;
+  font-weight: bold;
+}
+
+.task-procrastination {
+  color: lch(30.57% 35.56 113.68);
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.task-timer {
+  font-weight: bold;
+  color: #be0d0d;
+  font-size: 0.99rem;
+  margin-top: 4px;
+}
+
+.history-toggle {
+  width: 100%;
+  background: transparent;
+  color: hsl(295, 47%, 56%);
+  border: 1px dashed hsl(295, 47%, 56%);
+  margin-top: 8px;
+  font-size: 0.85rem;
+}
+
+.history-toggle:hover {
+  background: rgba(0,0,0,0.05);
 }
