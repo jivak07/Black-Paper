@@ -3,7 +3,7 @@
 **Get obsessed with what you dream and what you deside!!!**
 
 
-## The Problem
+## The Problem (Why)
 
 Everyone is distracted due to addictions, useless apps, etc., and because of this everyone is facing problem of lack of focus. black paper is not solving problem of distractions, black paper is solving problem of time management on estimated tasks.
 
@@ -14,9 +14,9 @@ let me give you one example of my own:- Whenever I estimate any task to work mos
 I am not giving solution for distractions because distractions are everywhere and everyone is facing it (you, me, musk, trump and everyone).
 
 
-## Solution
+## Solution (What is project)
 
-Black Paper is solution of time management on tasks. Here we can write task and estimate time, it's automatically starts timer on task. once your tasks get done black paper shows your progress in percentage. With dream core style/UI.
+Black Paper is solution of time management on tasks. Here we can write task and estimate time, it's automatically starts visible timer on task. once your tasks get done black paper shows your progress in percentage. Black Paper shows you how much good you are in which tasks, what is your weak point. with the help of these insights user can improve his time management on his estimated tasks. Black Paper works like your personal time manager on tasks. 
 
 
 ## Some core features of black paper
@@ -25,6 +25,7 @@ Black Paper is solution of time management on tasks. Here we can write task and 
 - Weekly reality check + last week comparison
 - How much time less or extra you takes %
 - Live visible timer
+- shareable screenshot card
 - Day total
 - Task categories
 - Minutes/hours/days units
@@ -32,20 +33,21 @@ Black Paper is solution of time management on tasks. Here we can write task and 
 - How it works explainer for new users
 - Milestones (10/25/50/100)
 - 100% Data safe
+- Nostalia dream core UI style
 
 
-## Screenshots
+## Screenshots 
 
-Screenshot 1 :- <img width="1891" height="882" alt="BLACK PAPER — The Tasks Time Manager - Google Chrome 15-07-2026 08_24_19-EDIT" src="https://github.com/user-attachments/assets/aadc6052-8c0c-419a-9894-2b42039c568b" />
+Screenshot 1 :- <img width="1893" height="890" alt="BLACK PAPER — The Time Manager - Screenshot 1" src="https://github.com/user-attachments/assets/e1786d47-e8d9-44bb-8f18-d957d910b309" />
 
-Screenshot 2 :- <img width="1896" height="890" alt="BLACK PAPER — The Tasks Time Manager" src="https://github.com/user-attachments/assets/0a621d1d-41d9-4a40-8ad6-35f3b310ce43" />
+Screenshot 2 :- <img width="1870" height="857" alt="BLACK PAPER — The Time Manager - Screenshot 2" src="https://github.com/user-attachments/assets/c12b96b9-8a16-4daf-9000-6f8533133111" />
 
-Screenshot 3 :- <img width="1872" height="884" alt="BLACK PAPER — The Tasks Time Manager (Screenshot 3)" src="https://github.com/user-attachments/assets/7e58aaed-8ee3-4b37-af35-d5bdb8f99247" />
+Screenshot 3 :- <img width="1863" height="878" alt="BLACK PAPER — The Time Manager - Screenshot 3" src="https://github.com/user-attachments/assets/f50a86ee-0505-4f88-8271-1a7b6f3582a1" />
 
 
-## Tech Stack
+## Tech Stack (How was made)
 
-Tech stack is only HTML, CSS, JS there is no backend and DB. Every data get saved on browsers local storage, so basically users data stays 100% safe / private.
+Tech stack is only HTML, CSS, JS there is no backend and DB. Every data get saved on browser's local storage, so basically users data stays 100% safe / private.
 
 
 ## How To Use
@@ -54,7 +56,9 @@ step 1 simply open the app, step 2 write tasks, select category, write estimated
 Now you can manage you time
 
 
-## Development
+## Development 
+
+Steps:-
 
 1. Clone the repository (copy paste in terminal)
 \`\`\`sh
