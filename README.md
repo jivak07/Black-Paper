@@ -14,7 +14,7 @@ let me give you one example of my own:- Whenever I estimate any task to work mos
 I am not giving solution for distractions because distractions are everywhere and everyone is facing it (you, me, musk, trump and everyone).
 
 
-## Solution (What is project)
+## Solution (What it does)
 
 Black Paper is solution of time management on tasks. Here we can write task and estimate time, it's automatically starts visible timer on task. once your tasks get done black paper shows your progress in percentage. Black Paper shows you how much good you are in which tasks, what is your weak point. with the help of these insights user can improve his time management on his estimated tasks. Black Paper works like your personal time manager on tasks. 
 
